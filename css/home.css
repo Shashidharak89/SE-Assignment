@@ -8,9 +8,9 @@ body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth; /* Enables smooth scrolling */
     background-image: url('../images/background.jpg');
-    background-size: cover;                   /* Ensures the image covers the entire body */
-    background-attachment: fixed;             /* Fixes the image so it doesn't move when scrolling */
-    background-position: center;              /* Centers the image */
+    background-size: cover;                    /* Ensures the image covers the entire body */
+    background-attachment: fixed;              /* Fixes the image so it doesn't move when scrolling */
+    background-position: center;               /* Centers the image */
     background-repeat: no-repeat; 
 }
 
@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(56, 52, 52, 0.7);
+    background-color: rgb(56, 52, 52);
     color: white;
     padding: 15px 20px;
     position: fixed;
@@ -80,4 +80,9 @@ nav {
 /* Additional Styling */
 h2 {
     margin-bottom: 20px;
+}
+@media(max-width:800px){
+    .nav-links{
+        display: none;
+    }
 }
