@@ -1,0 +1,56 @@
+
+/* Container for the text and image */
+.launch-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(175, 153, 146,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Typing text container */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+}
+
+.text-container h1 {
+    font-size: 28px;
+    color: #f5e8e8;
+    margin-bottom: 20px;
+}
+
+.text-container p.description {
+    font-size: 18px;
+    color: #feeeee;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Image container */
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Optional styling for responsive design */
+@media (max-width: 768px) {
+    .launch-section {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-top: 20px;
+    }
+}
